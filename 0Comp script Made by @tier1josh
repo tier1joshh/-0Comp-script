@@ -9,13 +9,13 @@ Settings = {
     pingprediction = true,
     FOV = math.huge,
     RESOVLER = true,
-    Tracer = false,
+    Tracer = true,
     TracerColor = Color3.new(75,0,130),
     TracerTransparency = 1,
-    TracerThickness = 2,
-    Circles = false,
-    CircleFOV = 150,
-    CircleColor = Color3.new(128, 128, 128),
+    TracerThickness = 1,
+    Circles = true,
+    CircleFOV = 200,
+    CircleColor = Color3.new(75,0,130),
     CircleThickness = 1,
     CircleFilled = false,
     CircleTransparency = 1,
@@ -143,7 +143,7 @@ spawn(function()
     placemarker.Transparency = 1
     end
     if Settings.Kalslock.showdot then
-    makemarker(placemarker, placemarker, Color3.fromRGB(75,0,130), 0.80, 0)
+    makemarker(placemarker, placemarker, Color3.fromRGB(255,20,147), 0.80, 0)
     end
 end)
 
